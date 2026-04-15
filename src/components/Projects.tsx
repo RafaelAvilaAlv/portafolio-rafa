@@ -13,15 +13,7 @@ const projects = [
     github: "https://github.com/RafaelAvilaAlv/nova-academia-web.git",
     demo: "https://nova-academia-web.vercel.app/",
   },
-  {
-    title: "UniversityScoreAPI",
-    image: "/prediccion.png", // 👈 nombre corregido
-    description:
-      "Backend robusto desarrollado con Spring Boot, enfocado en autenticación JWT, autorización por roles, validaciones profesionales, manejo de errores y estructura escalable orientada a APIs REST seguras.",
-    technologies: ["Java", "Spring Boot", "JWT", "MySQL", "Spring Security"],
-    github: "https://github.com/RafaelAvilaAlv/UniversityScoreApiFront.git",
-    demo: "https://university-score-api-front-pi.vercel.app/login",
-  },
+  
   {
     title: "Sistema para Negocios Pequeños",
     image: "/negocios.png",
@@ -30,6 +22,16 @@ const projects = [
     technologies: ["Angular", "Spring Boot", "MySQL", "REST API"],
     github: "https://github.com/RafaelAvilaAlv/gccifrontend.git",
     demo: "https://gccifrontend-2anm.vercel.app",
+  },
+
+  {
+    title: "UniversityScoreAPI",
+    image: "/prediccion.png", // 👈 nombre corregido
+    description:
+      "Backend robusto desarrollado con Spring Boot, enfocado en autenticación JWT, autorización por roles, validaciones profesionales, manejo de errores y estructura escalable orientada a APIs REST seguras.",
+    technologies: ["Java", "Spring Boot", "JWT", "MySQL", "Spring Security"],
+    github: "https://github.com/RafaelAvilaAlv/UniversityScoreApiFront.git",
+    demo: "https://university-score-api-front-pi.vercel.app/login",
   },
 ];
 
