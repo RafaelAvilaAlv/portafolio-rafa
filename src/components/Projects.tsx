@@ -28,7 +28,7 @@ const projects = [
     description:
       "Sistema orientado a la gestión de operaciones para pequeños negocios, incluyendo administración de clientes, servicios, pagos y flujo general del negocio con enfoque en escalabilidad y organización del sistema.",
     technologies: ["Angular", "Spring Boot", "MySQL", "REST API"],
-    github: "#",
+    github: "https://github.com/RafaelAvilaAlv/gccifrontend.git",
     demo: "https://gccifrontend-2anm.vercel.app",
   },
 ];
