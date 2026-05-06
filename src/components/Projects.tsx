@@ -15,7 +15,7 @@ const projects = [
     demo: "https://nova-academia-web.vercel.app/",
   },
   {
-    title: "Sistema para Negocios Pequeños",
+    title: "Sistema para Negocios Locales",
     image: "/negocios.png",
     description:
       "Sistema orientado a la gestión de operaciones para pequeños negocios, incluyendo administración de clientes, servicios, pagos y flujo general del negocio con enfoque en escalabilidad y organización del sistema.",
