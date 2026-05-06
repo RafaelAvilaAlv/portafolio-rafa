@@ -5,50 +5,84 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const projects = [
+ {
+  title: "Nova Academia",
+  image: "/academico.png",
+  description:
+    "Plataforma web institucional full stack orientada a la presentación de programas académicos y gestión de contacto real con usuarios. Desarrollada con arquitectura moderna separando frontend y backend, permite visualizar información académica, enviar formularios que se almacenan en base de datos y simular un entorno institucional real desplegado en la nube. Incluye validación robusta de datos en backend, comunicación mediante API REST y manejo estructurado de solicitudes. Implementa despliegue en servicios cloud con configuración de entorno, optimización de rendimiento y enfoque en escalabilidad.",
+  technologies: ["Next.js", "NestJS", "PostgreSQL", "Render", "Vercel"],
+  github: "#",
+  demo: "https://nova-academia-web.vercel.app/",
+},
   {
-    title: "Nova Academia",
-    image: "/academico.png",
-    description:
-      "Plataforma web institucional full stack desarrollada para presentar programas académicos, información institucional y gestionar mensajes de contacto reales mediante integración entre frontend, backend y base de datos en la nube.",
-    technologies: ["Next.js", "NestJS", "PostgreSQL", "Render", "Vercel"],
-    github: "https://github.com/RafaelAvilaAlv/nova-academia-web.git",
-    demo: "https://nova-academia-web.vercel.app/",
-  },
+  title: "Sistema de Gestión para Negocios Locales",
+  image: "/negocios.png",
+  description:
+    "Plataforma web para la gestión de pequeños negocios diseñada para centralizar y optimizar las operaciones diarias. Permite administrar clientes, citas, pagos y procesos de facturación de manera organizada y eficiente. Desarrollada con arquitectura API REST y un frontend moderno, mejora el flujo operativo, la gestión de la información y la productividad del negocio.",
+  technologies: [
+    "Angular",
+    "NestJS",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "REST API",
+    "JWT"
+  ],
+  github: "https://github.com/RafaelAvilaAlv/gccifrontend.git",
+  demo: "https://gccifrontend-2anm.vercel.app",
+},
   {
-    title: "Sistema para Negocios Locales",
-    image: "/negocios.png",
-    description:
-      "Sistema orientado a la gestión de operaciones para pequeños negocios, incluyendo administración de clientes, servicios, pagos y flujo general del negocio con enfoque en escalabilidad y organización del sistema.",
-    technologies: ["Angular", "Spring Boot", "MySQL", "REST API"],
-    github: "https://github.com/RafaelAvilaAlv/gccifrontend.git",
-    demo: "https://gccifrontend-2anm.vercel.app",
-  },
+  title: "FacturaPro AI",
+  image: "/imgfactura.png",
+  description:
+    "Plataforma SaaS de facturación electrónica multiempresa diseñada bajo principios de arquitectura escalable. Implementa seguridad robusta con JWT y control de acceso por roles, gestión integral de operaciones comerciales (clientes, servicios, citas, pagos y facturas) y dashboard financiero con analítica en tiempo real. Incluye integración simulada con el SRI (Ecuador) y un módulo de inteligencia artificial para consultas de negocio y automatización. Preparado para despliegue containerizado y evolución hacia microservicios.",
+  technologies: [
+    "Spring Boot",
+    "Java",
+    "PostgreSQL",
+    "Angular",
+    "TypeScript",
+    "JWT",
+    "Chart.js",
+    "OpenAI API",
+    "Swagger",
+    "Docker (ready)"
+  ],
+  github: "https://github.com/TU_REPO",
+  demo: "https://factura-pro-front.vercel.app/login",
+},
+ {
+  title: "UniversityScoreAPI",
+  image: "/prediccion.png",
+  description:
+    "Sistema diseñado para gestionar información académica de estudiantes de forma organizada y segura. Permite registrar usuarios, almacenar datos académicos y consultar resultados a través de una interfaz conectada al sistema. Cuenta con control de acceso mediante inicio de sesión, diferenciando permisos según el tipo de usuario. Su objetivo es facilitar la administración y consulta de información en entornos educativos de manera eficiente.",
+  technologies: [
+    "Java",
+    "Spring Boot",
+    "JWT",
+    "MySQL",
+    "REST API"
+  ],
+  github: "https://github.com/RafaelAvilaAlv/UniversityScoreApiFront.git",
+  demo: "https://university-score-api-front-pi.vercel.app/login",
+},
   {
-    title: "UniversityScoreAPI",
-    image: "/prediccion.png",
-    description:
-      "Backend robusto desarrollado con Spring Boot, enfocado en autenticación JWT, autorización por roles, validaciones profesionales, manejo de errores y estructura escalable orientada a APIs REST seguras.",
-    technologies: ["Java", "Spring Boot", "JWT", "MySQL", "Spring Security"],
-    github: "https://github.com/RafaelAvilaAlv/UniversityScoreApiFront.git",
-    demo: "https://university-score-api-front-pi.vercel.app/login",
-  },
-  {
-    title: "StudentStay",
-    image: "/studentstay.png",
-    description:
-      "Plataforma web full stack para la gestión de hospedaje estudiantil. Permite administrar reservas, habitaciones, clientes, servicios, facturación y recepción, incluyendo autenticación por roles y un chatbot inteligente integrado con IA.",
-    technologies: [
-      "Spring Boot",
-      "Java",
-      "MySQL",
-      "Angular",
-      "TypeScript",
-      "OpenAI API",
-      "Swagger",
-    ],
-    github: "https://github.com/RafaelAvilaAlv/StudentStayWEB.git",
-    demo: "https://studentstay-demo.vercel.app",
-  },
+  title: "StudentStay",
+  image: "/studentstay.png",
+  description:
+    "Plataforma web para la gestión de hospedaje estudiantil que permite administrar habitaciones, reservas y clientes de manera organizada. Facilita el control de ocupación, registro de pagos y procesos de facturación, mejorando la administración del servicio. Incluye sistema de inicio de sesión con diferentes niveles de acceso y un asistente inteligente que ayuda a resolver consultas de los usuarios, brindando una experiencia más interactiva y moderna.",
+  technologies: [
+    "Spring Boot",
+    "Java",
+    "MySQL",
+    "Angular",
+    "TypeScript",
+    "JWT",
+    "OpenAI API"
+  ],
+  github: "https://github.com/RafaelAvilaAlv/StudentStayWEB.git",
+  demo: "https://studentstay-demo.vercel.app",
+}
 ];
 
 export default function Projects() {
