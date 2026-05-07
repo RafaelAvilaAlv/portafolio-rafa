@@ -118,8 +118,7 @@ export default function Projects() {
         <motion.div
           className="max-w-7xl mx-auto"
           initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-extrabold text-center uppercase tracking-widest text-slate-900 mb-10">
@@ -137,8 +136,7 @@ export default function Projects() {
               <motion.article
                 key={project.title}
                 initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.45,
                   delay: index * 0.12,
