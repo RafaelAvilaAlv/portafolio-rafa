@@ -8,7 +8,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-24 overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
